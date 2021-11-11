@@ -1,0 +1,57 @@
+﻿<Page x:Class="CourseWork.AddCar"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CourseWork"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddCar">
+
+    <Page.Resources>
+        <Style x:Key="Button">
+            <Setter Property="Control.FontFamily" Value="Times New Roman" />
+            <Setter Property="Control.Background" Value="Purple" />
+            <Setter Property="Control.Foreground" Value="White" />
+            <Setter Property="Control.FontStyle" Value="Italic" />
+            <Setter Property="Control.Width" Value="175" />
+            <Setter Property="Control.Height" Value="32" />
+            <Setter Property="Control.FontSize" Value="14" />
+            <Setter Property="Control.VerticalAlignment" Value="Top" />
+            <Setter Property="Control.HorizontalAlignment" Value="Left" />
+        </Style>
+
+        <Style x:Key="Label">
+            <Setter Property="Control.FontFamily"          Value="Times New Roman" />
+            <Setter Property="Control.Foreground"          Value="White" />
+            <Setter Property="Control.VerticalAlignment"   Value="Top" />
+            <Setter Property="Control.HorizontalAlignment" Value="Left" />
+            <Setter Property="Control.FontSize"            Value="14" />
+        </Style>
+        <Style x:Key="TextBox">
+            <Setter Property="Control.Height"            Value="24" />
+            <Setter Property="Control.VerticalAlignment" Value="Top" />
+            <Setter Property="Control.Width"             Value="128" />
+            <Setter Property="Control.FontSize"          Value="14" />
+            <Setter Property="Control.HorizontalAlignment"          Value="Left" />
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Label Content="Марка"       Margin="64,32,0,0"  Style="{StaticResource Label}"/>
+        <Label Content="Модель"      Margin="64,64,0,0"  Style="{StaticResource Label}"/>
+        <Label Content="Цвет"        Margin="64,96,0,0"  Style="{StaticResource Label}"/>
+        <Label Content="Год выпуска" Margin="64,128,0,0" Style="{StaticResource Label}"/>
+        <Label Content="Стоимость"   Margin="64,160,0,0" Style="{StaticResource Label}"/>
+        <Label Content="Пробег"      Margin="64,192,0,0" Style="{StaticResource Label}"/>
+        <Label Content="Тип"         Margin="64,224,0,0" Style="{StaticResource Label}"/>
+        <TextBox x:Name="Stamp_TextBox"           Margin="246,32,0,0"  Style="{StaticResource TextBox}"/>
+        <TextBox x:Name="Model_TextBox"              Margin="246,64,0,0"  Style="{StaticResource TextBox}"/>
+        <TextBox x:Name="Color_TextBox"        Margin="246,96,0,0"  Style="{StaticResource TextBox}"/>
+        <TextBox x:Name="Year_release_TextBox"  Margin="246,128,0,0" Style="{StaticResource TextBox}"/>
+        <TextBox x:Name="Price_day_TextBox"     Margin="246,160,0,0" Style="{StaticResource TextBox}"/>
+        <TextBox x:Name="Mileage_TextBox"           Margin="246,192,0,0" Style="{StaticResource TextBox}"/>
+        <TextBox x:Name="Type_car_TextBox"         Margin="246,224,0,0" Style="{StaticResource TextBox}"/>
+        <Button x:Name="RegistrationButton" Content="Зарегистрировать" Margin="246,277,0,0" Style="{StaticResource Button}" Click="RegistrationButton_Click"/>
+        <Button x:Name="ExitButton"         Content="Назад"       Margin="246,314,0,0" Style="{StaticResource Button}" Click="ExitButton_Click"/>
+    </Grid>
+</Page>

@@ -1,0 +1,58 @@
+﻿<Page x:Class="CourseWork.UserRegistration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CourseWork"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UserRegistration">
+    <Page.Resources>
+        <Style x:Key="Button">
+            <Setter Property="Control.FontFamily" Value="Times New Roman" />
+            <Setter Property="Control.Background" Value="Purple" />
+            <Setter Property="Control.Foreground" Value="White" />
+            <Setter Property="Control.FontStyle" Value="Italic" />
+            <Setter Property="Control.Width" Value="175" />
+            <Setter Property="Control.Height" Value="32" />
+            <Setter Property="Control.FontSize" Value="14" />
+            <Setter Property="Control.VerticalAlignment" Value="Top" />
+            <Setter Property="Control.HorizontalAlignment" Value="Left" />
+        </Style>
+
+        <Style x:Key="Label">
+            <Setter Property="Control.FontFamily"          Value="Times New Roman" />
+            <Setter Property="Control.Foreground"          Value="White" />
+            <Setter Property="Control.VerticalAlignment"   Value="Top" />
+            <Setter Property="Control.HorizontalAlignment" Value="Left" />
+            <Setter Property="Control.FontSize"            Value="14" />
+        </Style>
+        <Style x:Key="TextBox">
+            <Setter Property="Control.Height"            Value="24" />
+            <Setter Property="Control.VerticalAlignment" Value="Top" />
+            <Setter Property="Control.Width"             Value="128" />
+            <Setter Property="Control.FontSize"          Value="14" />
+            <Setter Property="Control.HorizontalAlignment"          Value="Left" />
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Label Content="Фамилия"                     Margin="64,32,0,0"  Style="{StaticResource Label}"/>
+        <Label Content="Имя"                         Margin="64,64,0,0"  Style="{StaticResource Label}"/>
+        <Label Content="Отчество"                    Margin="64,96,0,0"  Style="{StaticResource Label}"/>
+        <Label Content="Стаж вождения"               Margin="64,128,0,0" Style="{StaticResource Label}"/>
+        <Label Content="Дата рождения"               Margin="64,160,0,0" Style="{StaticResource Label}"/>
+        <Label Content="Водительское удостоверение"  Margin="64,192,0,0" Style="{StaticResource Label}"/>
+        <Label Content="Логин"                       Margin="64,224,0,0" Style="{StaticResource Label}"/>
+        <Label Content="Пароль"                      Margin="64,256,0,0" Style="{StaticResource Label}"/>
+        <TextBox x:Name="Surname_TextBox"           Margin="246,32,0,0"  Style="{StaticResource TextBox}"/>
+        <TextBox x:Name="Name_TextBox"              Margin="246,64,0,0"  Style="{StaticResource TextBox}"/>
+        <TextBox x:Name="Patronymic_TextBox"        Margin="246,96,0,0"  Style="{StaticResource TextBox}"/>
+        <TextBox x:Name="Drive_experience_TextBox"  Margin="246,128,0,0" Style="{StaticResource TextBox}"/>
+        <TextBox x:Name="Date_of_Birth_TextBox"     Margin="246,160,0,0" Style="{StaticResource TextBox}"/>
+        <TextBox x:Name="Driver_license_TextBox"    Margin="246,192,0,0" Style="{StaticResource TextBox}"/>
+        <TextBox x:Name="textBox_login"             Margin="246,224,0,0" Style="{StaticResource TextBox}"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Left" Margin="246,256,0,0" VerticalAlignment="Top" Height="24" Width="128"/>
+        <Button x:Name="RegistrationButton" Content="Регистрация" Margin="246,311,0,0" Style="{StaticResource Button}" Click="RegistrationButton_Click"/>
+        <Button x:Name="ExitButton"         Content="Назад"       Margin="246,348,0,0" Style="{StaticResource Button}" Click="ExitButton_Click"/>
+    </Grid>
+</Page>
